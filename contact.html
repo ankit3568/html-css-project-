@@ -1,1 +1,67 @@
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="file.css">
+<script src="kk.js"></script>
+<script type="text/javascript">
+	function myfunction()
+	{
+		var x = document.getElementById("fname");
+		x.value=x.value.toUpperCase();
+		
+		var y = document.getElementById("lname");
+		y.value=y.value.toUpperCase();
+		
+	}	
+</script>
+<style>
+legend
+{
+	color:white;
+}
+label
+{
+	color:white;
+}
+</style>
+</head>
+<body background="bgs.jpg">
 
+<div style="background:#C0C0C0; padding:5px">
+<a href="Index.html">Index</a>
+<a href="Gallary.html">Gallery</a>
+<a href="Contact.html">Contact</a>
+</div>
+
+<div>
+<fieldset style="margin-left:650px;margin-right:700px">
+<legend>Contact US</legend>
+<form id="form" action="#" method="post">
+<label name="fname">First Name</label><br>
+<input type="text" id="fname" placeholder="" style="padding:5px" onblur="myfunction()"><br>
+
+<label name="lname">Last Name</label><br>
+<input type="text" id="lname" placeholder=""style="padding:5px" onblur="myfunction()"><br><br>
+
+<select style="padding:7px;padding-right:45px">
+<option value="India">India</option>
+<option value="Aus">Canada</option>
+<option value="india">Switzerland</option>
+<option value="india">Japan</option>
+<option value="india">Germany</option>
+<option value="india">Australia</option>
+<option value="india">United Kingdom</option>
+<option value="india">Sweden</option>
+</select>
+<br>
+<br>
+<textarea id="text cols="20" rows="5" name="Subject" style="padding-right:5px" onfocus="hp(this)"></textarea>
+
+<br>
+<input type="submit" value="Submit" style="padding:3px;margin-left:50px;margin-top:5px">
+</form>
+</fieldset>
+</div>
+
+</body>
+</html>
